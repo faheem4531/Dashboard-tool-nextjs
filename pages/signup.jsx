@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/signup.module.css";
 import axios from "axios";
 
-const signup = () => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [displayName,setName]=useState("")
@@ -39,4 +39,4 @@ const signup = () => {
   );
 };
 
-export default signup;
+export default Signup;
