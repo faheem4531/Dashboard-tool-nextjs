@@ -2,7 +2,7 @@ import axios from "axios";
 import { onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import { auth } from "../config/firebase";
 import { AuthContext } from "../context/auth-context";
 import styles from "../styles/Home.module.css";
@@ -40,7 +40,7 @@ export default function Home() {
   if (loading) return <div>loading...</div>;
   return (
     <div className={styles.container}>
-      <Navbar />
+      {/* <Navbar /> */}
       <div style={{ marginTop: "100px", textAlign: "center" }}>
         <button
           style={{ padding: "20px 40px" }}
